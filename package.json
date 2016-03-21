@@ -1,0 +1,23 @@
+{
+  "name": "mithril-redux-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/anywhere -s",
+    "watch": "mkdir -p build && node node_modules/.bin/watchify lib/index.js -o build/bundle.js",
+    "build": "mkdir -p build && node node_modules/.bin/browserify lib/index.js -o build/bundle.js"
+  },
+  "author": "Ondrej Brinkel <info@anzui.de>",
+  "license": "ISC",
+  "dependencies": {
+    "mithril": "^0.2.3",
+    "redux": "^3.3.1"
+  },
+  "devDependencies": {
+    "anywhere": "^1.2.0",
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
+  }
+}
